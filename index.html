@@ -1,1 +1,266 @@
-<h1>test</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="libs/scrollReveal/scrollreveal.min.js"></script>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css" />
+    
+    <link rel="stylesheet" href="libs/glide/glide.core.min.css" />
+    <link rel="stylesheet" href="libs/glide/glide.theme.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="logo_01.ico" />
+
+    <title>上海钦泽服饰有限公司</title>
+  </head>
+  <body>
+    <!-- 头部 -->
+    <header class="open">
+      <div class="logo">上海钦泽服饰有限公司</div>
+      <!-- 导航 -->
+      <nav>
+        <a href="#home">首页</a>
+        <a href="#about-us">关于我们</a>
+        <a href="#showcases">成功案例</a>
+        <a href="gallery.html" target="_blank">产品相册</a>
+        <a href="#service">服务支持</a>
+      </nav>
+      <!-- 折叠导航按钮 -->
+      <div class="burger">
+        <div class="burger-line1"></div>
+        <div class="burger-line2"></div>
+        <div class="burger-line3"></div>
+      </div>
+    </header>
+    <!-- 首页图片轮播，使用glide JS插件 -->
+    <div class="glide" id="home">
+      <!-- 轮播轨道 -->
+      <div class="glide__track" data-glide-el="track">
+        <!-- 所有轮播容器 -->
+        <div class="glide__slides">
+          <!-- 单个轮播组件 -->
+          <div class="glide__slide">
+            <!-- 轮播标题 -->
+            <div class="slide-caption">
+              <h1>上海钦泽服饰有限公司</h1>
+              <h3>
+                质量第一，顾客至上，开拓创新！
+              </h3>
+              <!-- 探索按钮 -->
+              <button class="explore-btn">探索更多</button>
+            </div>
+            <!-- 背景遮罩 -->
+            <div class="backdrop"></div>
+            <!-- 轮播图片 -->
+            <img src="images/banner-01.jpg" alt="" />
+          </div>
+          <!-- 第二张轮播 -->
+          <div class="glide__slide">
+            <div class="slide-caption">
+              <h1>公司理念</h1>
+              <h3>
+                从细节中彰显工艺品质，从材质中体现安全环保，从服务中感受专业放心！
+              </h3>
+            </div>
+            <div class="backdrop"></div>
+            <!-- 轮播图片 -->
+            <img src="images/gongchang-02.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- glide 控制按钮 -->
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+          <
+        </button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+          >
+        </button>
+      </div>
+      <!-- glide 控制圆点 -->
+      <div class="glide__bullets" data-glide-el="controls[nav]">
+        <button class="glide__bullet" data-glide-dir="=0"></button>
+        <button class="glide__bullet" data-glide-dir="=1"></button>
+      </div>
+    </div>
+    <!-- 内容容器 -->
+    <div class="content-wrapper">
+      <!-- 关于我们， id用来导航菜单跳转 -->
+      <section id="about-us" class="about-us">
+        <!-- 标题 -->
+        <h2 class="title1">关于我们</h2>
+        <!-- 补充说明区域 -->
+        <p class="intro">
+          上海钦泽服饰有限公司成立于2014年，坐落于上海青浦区，是一家集科研开发，生产，销售为一体，专业生产各种TPU高频商标，皮标，反光标牌，硅胶印刷，织带印刷，激光（镭射）打标/切割加工等服装辅料。产品广泛用于服装、鞋帽、箱包手袋及儿童系列用品等等，产品环保、耐磨、耐洗，深受国内外广大用户的喜爱。
+        </p>
+      </section>
+      <!-- 成功案例 -->
+      <!-- section-bg 区域灰色背景 -->
+      <section id="showcases" class="showcases section-bg">
+        <h2 class="title1">成功案例</h2>
+        <!-- 筛选按钮 -->
+        <div class="filter-btns">
+          <button class="filter-btn active" data-filter="*">
+            全部
+          </button>
+          <!-- 指定要过滤的class selector，包括. -->
+          <button class="filter-btn" data-filter=".yinbiao">
+            印标
+          </button>
+          <button class="filter-btn" data-filter=".zhibiao">
+            织标
+          </button>
+        </div>
+        <!-- 案例 -->
+        <div class="cases">
+          <!-- case-item样式类，yinbiao为类别类 -->
+          <div class="case-item yinbiao">
+            <!-- 图片 -->
+            <img src="images/yinbiao-01.jpg" alt="" />
+          </div>
+          <div class="case-item yinbiao">
+            <img src="images/yinbiao-02.jpg" alt="" />
+          </div>
+          <div class="case-item yinbiao">
+            <img src="images/yinbiao-03.jpg" alt="" />
+          </div>
+          <div class="case-item yinbiao">
+            <img src="images/yinbiao-04.jpg" alt="" />
+          </div>
+          <div class="case-item yinbiao">
+            <img src="images/yinbiao-05.jpg" alt="" />
+          </div>
+          <div class="case-item yinbiao">
+            <img src="images/yinbiao-06.jpg" alt="" />
+          </div>
+          <div class="case-item zhibiao">
+            <img src="images/zhibiao-05.jpg" alt="" />
+          </div>
+          <div class="case-item zhibiao">
+            <img src="images/zhibiao-06.jpg" alt="" />
+          </div>
+          <div class="case-item yinbiao zhibiao">
+            <img src="images/zhibiaoyinbiao-01.jpg" alt="" />
+          </div>
+          <div class="case-item yinbiao zhibiao">
+            <img src="images/zhibiaoyinbiao-02.jpg" alt="" />
+          </div>
+          <div class="case-item yinbiao zhibiao">
+            <img src="images/zhibiaoyinbiao-03.jpg" alt="" />
+          </div>
+          <div class="case-item yinbiao zhibiao">
+            <img src="images/zhibiaoyinbiao-04.jpg" alt="" />
+          </div>
+        </div>
+        <a href="gallery.html" target="_blank">
+          <button class="product-btn">更 多 产 品</button>
+        </a>
+      </section>
+      <!-- 服务支持 -->
+      <section id="service" class="service">
+        <h2 class="title1">服务支持</h2>
+        <p class="intro">
+          本公司专业生产洗标、吊牌；热转印标、织标；TPU高频标；反光标、皮标；硅胶转印标、服饰压花；织带印刷、硅胶印刷；以及手提袋、PP袋等各种包装礼盒。
+        </p>
+        <!-- 同关于我们 -->
+        <div class="services">
+          <div class="service-item">
+            <i class="fas fa-comments"></i>
+            <h2 class="service-title">需求沟通</h2>
+            <p class="service-content">
+              客户提出基本需求
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-gavel"></i>
+            <h2 class="service-title">项目评估</h2>
+            <p class="service-content">
+              根据客户提出的需求进行评估，估算出相应的时间与费用
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-file-signature"></i>
+            <h2 class="service-title">签订合同</h2>
+            <p class="service-content">
+              合作双方确认费用、工期、合作要求的基础上，双方共同签订合同
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-user"></i>
+            <h2 class="service-title">提案阶段</h2>
+            <p class="service-content">
+              完成产品初稿设计
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <h2 class="service-title">制作阶段</h2>
+            <p class="service-content">
+              完成所有产品的制作
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-user-check"></i>
+            <h2 class="service-title">产品验收</h2>
+            <p class="service-content">
+              根据合同条款进行产品验收并确认
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- 底部信息 -->
+    <footer>
+      <!-- 底部菜单 -->
+      <div class="footer-menus">
+        <!-- 联系信息 -->
+        <div class="contact-us">
+          <p class="menu-title">联系我们</p>
+          <p>电话：15000089079</p>
+          <p>QQ：1757943110</p>
+          <p>电子邮箱：qinze999@126.com</p>
+        </div>
+        <!-- 导航菜单 -->
+        <div class="service-menu footer-menu">
+          <p class="menu-title">关于</p>
+          <ul class="menu-items">
+            <li><a href="#">主页</a></li>
+            <li><a href="#about-us">关于我们</a></li>
+          </ul>
+        </div>
+        <div class="showcase-menu footer-menu">
+          <p class="menu-title">产品中心</p>
+          <ul class="menu-items">
+            <li><a href="#showcases">成功案例</a></li>
+            <li><a href="gallery.html" target="_blank">更多产品</a></li>
+          </ul>
+        </div>
+        <div class="help-menu footer-menu">
+          <p class="menu-title">服务</p>
+          <ul class="menu-items">
+            <li><a href="#service">服务支持</a></li>
+          </ul>
+        </div>
+        <!-- 版权信息 -->
+        <p class="rights">
+          上海钦泽服饰有限公司
+        </p>
+        <!-- 返回顶部按钮 -->
+        <div class="scrollToTop">
+          <a href="#home"><i class="fas fa-chevron-up"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- 轮播插件 -->
+    <script src="libs/glide/glide.min.js"></script>
+    <!-- 案例筛选组件  -->
+    <script src="libs/isotope/isotope.pkgd.min.js"></script>
+    <!-- 动画组件 -->
+    <script src="libs/anime/anime.min.js"></script>
+    <!-- 流畅滑动组件 -->
+    <script src="libs/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <!-- 自定义JS文件 -->
+    <script src="index.js"></script>
+  </body>
+</html>
